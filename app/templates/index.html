@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>TODO list</title>
+    </head>
+    <body>
+        <h1>Hi, yoba!</h1>
+        {% for task in tasks %}
+        <div><p><b><-{ task.task }}</b> must be done until: <b>{{ task.deadline }}</b></p></div>
+        {% endfor %}
+    </body>
+</html>
